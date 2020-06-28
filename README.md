@@ -8,15 +8,17 @@
 4. Copy `.env.example` to `.env`
 4. Update `.env` and set `DB_USERNAME` and `DB_PASSWORD` 
 5. Run the following in your terminal
+    ```
     $ cd bus-stop-locator-api
     $ composer install
     $ php artisan jwt:secret
     $ php artisan migrate --seed
+    ```
 
 
 **Usage**
 1. Login using the following credentials:
-    Email: jdoe@gmail.com
-    Password: password
+> Email: jdoe@gmail.com
+> Password: password
 
 
