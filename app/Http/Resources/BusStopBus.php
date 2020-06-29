@@ -15,11 +15,13 @@ class BusStopBus extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'bus_stop_id' => $this->bus_stop_id,
             'bus_id' => $this->bus_id,
             'first_arrival_time' => $this->first_arrival_time,
             'last_arrival_time' => $this->last_arrival_time,
             'bus' => new Bus($this->bus),
+            'bus_stop' => new BusStop($this->busStop)
         ];
     }
 }

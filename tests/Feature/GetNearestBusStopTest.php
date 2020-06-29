@@ -127,6 +127,7 @@ class GetNearestBusStopTest extends TestCase
                     'long' => $expectedBusStop->long,
                     'buses' => [
                         [
+                            'id' => $bus->id,
                             'code' => $bus->code,
                             'first_arrival_time' => $busStopBus->first_arrival_time,
                             'last_arrival_time' => $busStopBus->last_arrival_time,

@@ -15,6 +15,7 @@ class BusStop extends Model
         return $this->belongsToMany(Bus::class, 'bus_stop_buses')
             ->using(BusStopBus::class)
             ->withPivot([
+                'id',
                 'first_arrival_time',
                 'last_arrival_time'
             ]);
